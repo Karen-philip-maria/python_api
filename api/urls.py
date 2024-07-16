@@ -11,7 +11,7 @@ from  django.urls import path
 from .views import CourseListView
 
 from  django.urls import path
-from .views import ClassperiodListView
+from .views import ClassPeriodListView
 
 
 
@@ -32,5 +32,5 @@ urlpatterns=[
 ]
 
 urlpatterns=[
-    path("classperiod/",ClassperiodListView.as_view(), name="classperiod_list_view")
+    path("classperiod/",ClassPeriodListView.as_view(), name="classperiod_list_view")
 ]
