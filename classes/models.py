@@ -1,16 +1,18 @@
 from django.db import models
 
-class Class(models.Model):
+class Classes(models.Model):
     class_name = models.CharField()
-    class_capacity = models.SmallIntegerField()
+    class_capacity = models.PositiveSmallIntegerField()
     class_duration = models.DateField()
     class_training_assistant= models.TextField()
     class_representatives= models.TextField()
-    class_empty_slots= models.SmallIntegerField()
-    class_white_boards= models.SmallIntegerField()
-    class_number_of_tvs= models.SmallIntegerField()
-    class_number_of_desks= models.SmallIntegerField()
-    class_number_of_chairs= models.SmallIntegerField()
-    class_code= models.SmallIntegerField()
+    class_empty_slots= models.PositiveSmallIntegerField()
+    class_white_boards= models.PositiveSmallIntegerField()
+    class_number_of_tvs= models.PositiveSmallIntegerField()
+    class_number_of_desks= models.PositiveSmallIntegerField()
+    class_number_of_chairs= models.PositiveSmallIntegerField()
+    class_code= models.PositiveSmallIntegerField()
 
-# Create your models here.
+
+    def __str__(self):
+        return f"{self.class_name}{self.class_capacity}"
