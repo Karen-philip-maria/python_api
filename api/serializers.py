@@ -5,6 +5,7 @@ from teacher.models import Teacher
 from classes.models import Classes
 from classperiod.models import ClassPeriod
 
+
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model= Student
