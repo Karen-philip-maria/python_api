@@ -13,6 +13,8 @@ class Classes(models.Model):
     class_number_of_chairs= models.PositiveSmallIntegerField()
     class_code= models.PositiveSmallIntegerField()
 
+    
+
 
     def __str__(self):
         return f"{self.class_name}{self.class_capacity}"
