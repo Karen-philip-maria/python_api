@@ -1,6 +1,6 @@
 from django.db import models
 
-from student.models import Student
+# from student.models import Student
 
 class Course(models.Model):
     course_title= models.CharField()
@@ -12,9 +12,7 @@ class Course(models.Model):
     course_attendees= models.CharField()
 
 
-    student = models.ManyToManyField(Student)
-
-
+    # student = models.ManyToManyField(Student)
 
     def __str__(self):
         return f"{self.course_title}{self.course_category}"

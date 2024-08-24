@@ -2,9 +2,9 @@ from django.db import models
 
 
 
-from course.models import Course
+# from course.models import Course
 
-from student.models import Student
+# from student.models import Student
 
 
 
@@ -15,8 +15,8 @@ class ClassPeriod(models.Model):
     classroom= models.CharField(max_length=20)
     day_of_week = models.CharField(max_length=10)
 
-    course = models.ManyToManyField(Course)
-    teacher = models.ManyToManyField(Student)
+    # course = models.ManyToManyField(Course)
+    # teacher = models.ManyToManyField(Student)
 
 
     def __str__(self):

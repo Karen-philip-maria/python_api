@@ -7,8 +7,6 @@ from .serializers import StudentSerializer
 from classes.models import Classes
 from .serializers import ClassesSerializer
 
-# from .views import StudentDetailView
-
 from classperiod.models import ClassPeriod
 from .serializers import ClassPeriodSerializer
 
@@ -22,7 +20,6 @@ from .serializers import TeacherSerializer
 from rest_framework.response import Response
 
 from rest_framework.views import status
-
 
 
 
